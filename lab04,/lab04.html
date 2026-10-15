@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="HTML 5 Structure and Content Elements with some CSS">
+  <meta name="keywords" content="HTML, CSS, Structure, Content Elements">
+  <meta name="author" content="Your Name">
+  <title>HTML 5 Structure and Content Elements with some CSS</title>
+  <link rel="stylesheet" href="./styles/lab04.css">
+</head>
+<body>
+    <header>
+        <h1>HTML 5 Structure and Content Elements with some CSS</h1>
+        <nav>
+            <a href="#headings">Headings and Paragraphs</a>
+            <a href="#special">Special Character</a>
+            <a href="#list">Lists</a>
+            <a href="#table">Tables</a>
+            <a href="#img">Images</a>
+            <a href="#links">HyperLinks</a>
+        </nav>
+    </header>
+
+    <article>
+    <h2>HTML5 Basic Elements</h2>
+    <aside>
+        <p>HTML page without CCS styling looks a bit boring!!</p>
+    </aside>
+    <h2 id="headings">Headings and Paragraphs</h2> 
+        <p>Headings and paragraphs are BLOCK elements</p>
+    <h3>Headings</h3>
+    <p>There are 6 levels of heading. Headings are logical marked. Do not skip levels. If you want to change the size of a heading, don't change its level - change the CSS.</p>   
+    <h3>Paragraphs</h3>
+    <p>Paragraphs contain the body text of a web page. You cannot put another block element inside a paragraph.</p>
+    
+    <h2 id="special">Special Characters</h2>
+    <p>While HTML supports many named special characters like ® (#174), XML only supports 5 namely: " ' & < and >. So to keep your HTML compliant you need to use numbers for all the others.</p>
+
+    <h2 id="list">Lists</h2>
+    <p>There are three types of lists: Unordered and Ordered lists, and Definition Lists</p>
+    <h3>Unordered Lists</h3>
+    <p>
+        <ul>
+            <li>First Bullet point</li>
+            <li>Second Bullet point</li>
+            <li>Third Bullet point</li>
+        </ul>
+    </p>
+    <h3>Ordered Lists</h3>
+    <p>
+        <ol>
+            
+            <li>First Ordered point</li>
+            <li>Second Ordered point</li>
+            <li>Third Ordered point</li>
+        </ol>
+    </p>
+    <h3>Definition Lists</h3>
+    <p>
+        <dl>
+            <dt>First term (or name)</dt>
+            <dd>First description (or definition, or value)</dd>
+            <dt>Second term (or name)</dt>
+            <dd>second description (or definition, or value)</dd>
+        </dl>
+    </p>
+    <p>Lists can also be nested inside each other</p>
+    <ol>
+        <li>First item</li>
+        <li>Second item
+            <ul>
+                <li>First sub-item</li>
+                <li>Second sub-item</li>
+            </ul>
+        </li>
+        <li>Third Item</li>
+    </ol>
+
+    <h2 id="table">Tables</h2>
+    <table>
+        <caption>Table of monthly Savings</caption>
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Savings</th>
+            </tr>
+            <tr>
+                <th>Salary</th>
+                <th>Interest</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jan</td>
+                <td>$60</td>
+                <td>$40</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>Feb</td>
+                <td>$40</td>
+                <td>$40</td>
+                <td>$80</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Gran Total</th>
+                <th>$180</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2 id="img">Images</h2>
+    <a href="Images/mycat.jpg"> 
+        <img src="Images/mycat.jpg" alt="MyKitty" width="200" height="150">
+    </a>
+
+    <h2 id="links">HyperLinks</h2>
+    <p><a href="https://swinburne.instructure.com" title="This is a link to an external site Canvas">This is a link to an external site Canvas</a></p>
+    <p>this is a link to the <a href="#list">Lists section</a> of this page</p>
+    <p>this is a link using <a href="mailto:exp@exp.com">email</a>rather than an http protocol</p>
+</article>
+</body>
+</html>
